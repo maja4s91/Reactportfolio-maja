@@ -68,8 +68,8 @@ const Contact = () => {
           </div>
         </address>
 
-        <div class="form contact-form">
-          <label for="email">
+        <div className="form contact-form">
+          <label htmlFor="email">
             <input
               type="text"
               name="email"
@@ -78,10 +78,10 @@ const Contact = () => {
               required
             />
           </label>
-          <label for="name">
+          <label htmlFor="name">
             <input type="text" name="name" id="name" placeholder="Subject" />
           </label>
-          <label for="message">
+          <label htmlFor="message">
             <textarea
               name="message"
               id="message"
@@ -90,7 +90,7 @@ const Contact = () => {
               required
             ></textarea>
           </label>
-          <button class="btn-contact">Send message</button>
+          <button className="btn-contact">Send message</button>
         </div>
       </form>
     </section>
