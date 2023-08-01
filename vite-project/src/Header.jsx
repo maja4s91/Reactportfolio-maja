@@ -17,7 +17,7 @@ const Header = () => {
         Portfolio
       </Link>
       <nav className="nav">
-        <ul className="nav-list">
+        <ul className="nav-list" onClick={handleMobClick}>
           <li>
             <Link to="/" className="nav-link">
               Home
