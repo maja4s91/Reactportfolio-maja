@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import { IonIcon } from "@ionic/react";
 import {
   pinOutline,
@@ -20,7 +18,7 @@ const Contact = () => {
 
           <div className="contact">
             <p className="contact-locat">
-              <IonIcon icon={pinOutline} className="contact-icon"></IonIcon>
+              <IonIcon icon={pinOutline} className="contact-icon" />
               Belgrade, 11000
             </p>
             <p className="contact-email">

@@ -1,8 +1,18 @@
 import { Link } from "react-router-dom";
+import { IonIcon } from "@ionic/react";
+import { menuOutline, closeOutline } from "ionicons/icons";
+
+import React, { useState } from "react";
 
 const Header = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleMobClick = () => {
+    setIsActive(!isActive);
+  };
+
   return (
-    <header className="header">
+    <header className={isActive ? "header nav-open" : "header"}>
       <Link to="/" className="logo">
         Portfolio
       </Link>
@@ -44,10 +54,12 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <button className="btn-mob-nav">
-        <ion-icon className="icon-mobile-nav" name="menu-outline"></ion-icon>
-
-        <ion-icon className="icon-mobile-nav" name="close-outline"></ion-icon>
+      <button className="btn-mob-nav" onClick={handleMobClick}>
+        {isActive ? (
+          <IonIcon className="icon-mobile-nav" icon={closeOutline}></IonIcon>
+        ) : (
+          <IonIcon className="icon-mobile-nav" icon={menuOutline}></IonIcon>
+        )}
       </button>
     </header>
   );

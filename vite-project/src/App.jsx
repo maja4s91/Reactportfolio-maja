@@ -15,21 +15,12 @@ function App() {
         <div className="content">
           <Routes>
             <Route exact path="/" element={<Home />} />
-          </Routes>
-          <Routes>
             <Route path="/about" element={<About />} />
-          </Routes>
-          <Routes>
             <Route path="/skills" element={<Skills />} />
-          </Routes>
-          <Routes>
             <Route path="/projects" element={<Projects />} />
-          </Routes>
-          <Routes>
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
-
         <Footer />
       </div>
     </Router>
