@@ -12,7 +12,14 @@ const Contact = () => {
   return (
     <section className="section-contact">
       <h2 className="heading-primary">Contact</h2>
-      <form className="form-box" name="contact" netlify>
+      <form
+        className="form-box"
+        name="contacts"
+        method="post"
+        data-netlify="true"
+        onSubmit="submit"
+      >
+        <input type="hidden" name="form-name" value="contacts" />
         <address className="contacts-box">
           <p className="contact-intro">Let's talk about everything!</p>
 
