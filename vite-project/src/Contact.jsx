@@ -7,20 +7,12 @@ import {
   logoGithub,
   logoSkype,
 } from "ionicons/icons";
-import Form from "./Form";
 
 const Contact = () => {
   return (
     <section className="section-contact">
       <h2 className="heading-primary">Contact</h2>
-      <div
-        className="form-box"
-        // name="contacts"
-        // method="post"
-        // data-netlify="true"
-        // data-netlify-honeypot="bot-field"
-      >
-        {/* <input type="hidden" name="form-name" value="contacts" /> */}
+      <form className="form-box">
         <address className="contacts-box">
           <p className="contact-intro">Let's talk about everything!</p>
 
@@ -68,8 +60,8 @@ const Contact = () => {
             </ul>
           </div>
         </address>
-        <Form />
-        {/* <div className="form contact-form">
+
+        <div className="form contact-form">
           <label htmlFor="email">
             <input
               type="text"
@@ -92,8 +84,8 @@ const Contact = () => {
             ></textarea>
           </label>
           <button className="btn-contact">Send message</button>
-        </div> */}
-      </div>
+        </div>
+      </form>
     </section>
   );
 };
