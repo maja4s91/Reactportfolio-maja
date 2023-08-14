@@ -7,12 +7,13 @@ import {
   logoGithub,
   logoSkype,
 } from "ionicons/icons";
+import Form from "./Form";
 
 const Contact = () => {
   return (
     <section className="section-contact">
       <h2 className="heading-primary">Contact</h2>
-      <form className="form-box">
+      <div className="form-box">
         <address className="contacts-box">
           <p className="contact-intro">Let's talk about everything!</p>
 
@@ -60,8 +61,9 @@ const Contact = () => {
             </ul>
           </div>
         </address>
+        <Form />
 
-        <div className="form contact-form">
+        {/* <form className="form contact-form">
           <label htmlFor="email">
             <input
               type="text"
@@ -84,8 +86,8 @@ const Contact = () => {
             ></textarea>
           </label>
           <button className="btn-contact">Send message</button>
-        </div>
-      </form>
+        </form> */}
+      </div>
     </section>
   );
 };
