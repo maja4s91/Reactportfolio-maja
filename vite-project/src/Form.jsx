@@ -1,6 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Form = () => {
+  const [state, setState] = useState({
+    email: "",
+    name: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setState({ ...state, [name]: value });
+  };
+
+  const handleForm = (e) => e.preventDefault();
+
   const encode = (data) => {
     return Object.keys(data)
       .map(
@@ -9,38 +22,19 @@ const Form = () => {
       .join("&");
   };
 
-  const [state, setState] = useState({
-    email: "",
-    name: "",
-    message: "",
-  });
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setState({ ...state, [name]: value });
-  };
-
-  const handleForm = (e) => {
+  useEffect(() => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state }),
+      body: encode({ "form-name": "contact", ...state }),
     })
       .then(() => alert("Success!"))
+      .then(() => setFormData({ name: "", email: "", message: "" }))
       .catch((error) => alert(error));
-
-    e.preventDefault();
-  };
+  }, [state]);
 
   return (
-    <form
-      className="form contact-form"
-      onSubmit={handleForm}
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-    >
-      <input type="hidden" name="form-name" value="contact" />
+    <form className="form contact-form" onSubmit={handleForm}>
       <label htmlFor="email">
         <input
           type="text"
