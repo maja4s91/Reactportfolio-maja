@@ -29,7 +29,7 @@ const Form = () => {
       body: encode({ "form-name": "contact", ...state }),
     })
       .then(() => alert("Success!"))
-      .then(() => setFormData({ name: "", email: "", message: "" }))
+      .then(() => setState({ email: "", name: "", message: "" }))
       .catch((error) => alert(error));
   }, [state]);
 
