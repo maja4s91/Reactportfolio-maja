@@ -1,6 +1,14 @@
 import { useState } from "react";
 
 const Form = () => {
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
   const [state, setState] = useState({
     email: "",
     name: "",
@@ -12,15 +20,15 @@ const Form = () => {
   };
 
   const handleForm = (e) => {
-    e.preventDefault();
-
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(state).toString(),
+      body: encode({ "form-name": "contact", ...this.state }),
     })
       .then(() => alert("Success!"))
       .catch((error) => alert(error));
+
+    e.preventDefault();
   };
 
   return (
@@ -29,7 +37,8 @@ const Form = () => {
       onSubmit={handleForm}
       name="contact"
       method="POST"
-      netlify
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
     >
       <input type="hidden" name="form-name" value="contact" />
       <label htmlFor="email">
