@@ -1,14 +1,6 @@
 import { useState } from "react";
 
 const Form = () => {
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  };
-
   const [state, setState] = useState({
     email: "",
     name: "",
@@ -16,8 +8,7 @@ const Form = () => {
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setState((prevFormData) => ({ ...prevFormData, [name]: value }));
-    console.log(state);
+    setState({ ...state, [name]: value });
   };
 
   const handleForm = (e) => {
@@ -26,14 +17,21 @@ const Form = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...state }),
+      body: new URLSearchParams(state).toString(),
     })
       .then(() => alert("Success!"))
       .catch((error) => alert(error));
   };
 
   return (
-    <form className="form contact-form" onSubmit={handleForm}>
+    <form
+      className="form contact-form"
+      onSubmit={handleForm}
+      name="contact"
+      method="POST"
+      netlify
+    >
+      <input type="hidden" name="form-name" value="contact" />
       <label htmlFor="email">
         <input
           type="text"
