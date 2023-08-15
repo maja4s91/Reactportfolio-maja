@@ -28,9 +28,9 @@ const Form = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...state }),
     })
-      .then(() => alert("Success!"))
+      .then(() => console.log("Success!"))
       .then(() => setState({ email: "", name: "", message: "" }))
-      .catch((error) => alert(error));
+      .catch((error) => console.log(error));
   }, [state]);
 
   return (
