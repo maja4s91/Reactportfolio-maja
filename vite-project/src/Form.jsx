@@ -12,8 +12,6 @@ const Form = () => {
     setState({ ...state, [name]: value });
   };
 
-  const handleForm = (e) => e.preventDefault();
-
   const encode = (data) => {
     return Object.keys(data)
       .map(
@@ -22,16 +20,20 @@ const Form = () => {
       .join("&");
   };
 
-  useEffect(() => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...state }),
-    })
-      .then(() => console.log("Success!"))
-      .then(() => setState({ email: "", name: "", message: "" }))
-      .catch((error) => console.log(error));
-  }, [state]);
+  const handleForm = (e) => {
+    e.preventDefault();
+
+    useEffect(() => {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...state }),
+      })
+        .then(() => console.log("Success!"))
+        .then(() => setState({ email: "", name: "", message: "" }))
+        .catch((error) => console.log(error));
+    }, []);
+  };
 
   return (
     <form className="form contact-form" onSubmit={handleForm}>
