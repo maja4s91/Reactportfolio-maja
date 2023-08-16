@@ -9,7 +9,7 @@ const Form = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setState({ ...state, [name]: value });
+    setState((prevState) => ({ ...prevState, [name]: value }));
   };
 
   const encode = (data) => {
@@ -27,7 +27,7 @@ const Form = () => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...state }),
+        body: encode({ "form-name": "contact-react", ...state }),
       })
         .then(() => console.log("Success!"))
         .then(() => setState({ email: "", name: "", message: "" }))
