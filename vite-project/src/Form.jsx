@@ -21,8 +21,6 @@ const Form = () => {
   };
 
   const handleForm = (e) => {
-    e.preventDefault();
-
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -30,6 +28,8 @@ const Form = () => {
     })
       .then(() => alert("Success!"))
       .catch((error) => alert(error));
+
+    e.preventDefault();
   };
 
   return (
