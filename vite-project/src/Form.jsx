@@ -27,6 +27,7 @@ const Form = () => {
       body: encode({ "form-name": "contact-react", ...state }),
     })
       .then(() => alert("Success!"))
+      .then(() => setState({ email: "", name: "", message: "" }))
       .catch((error) => alert(error));
 
     e.preventDefault();
