@@ -28,7 +28,7 @@ const Contact = () => {
             </p>
             {/* <p className="contact-mob">
           <IonIcon icon={callOutline} className="contact-icon"></IonIcon>
-          +381695666301
+          
         </p>  */}
             <ul className="profiles-list contact-li">
               <li className="li-logo">
