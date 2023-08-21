@@ -11,35 +11,42 @@ const Header = () => {
     setIsActive(!isActive);
   };
 
+  const handleMobileMenu = () => {
+    setIsActive(!isActive);
+  };
   return (
-    <header className={isActive ? "header nav-open" : "header"}>
+    <header className={isActive ? "header nav-open " : "header"}>
       <Link to="/" className="logo">
         Portfolio
       </Link>
       <nav className="nav">
         <ul className="nav-list">
           <li>
-            <Link to="/" className="nav-link">
+            <Link to="/" className="nav-link" onClick={handleMobileMenu}>
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className="nav-link">
+            <Link to="/about" className="nav-link" onClick={handleMobileMenu}>
               About
             </Link>
           </li>
           <li>
-            <Link to="/skills" className="nav-link">
+            <Link to="/skills" className="nav-link" onClick={handleMobileMenu}>
               Skills
             </Link>
           </li>
           <li>
-            <Link to="/projects" className="nav-link">
+            <Link
+              to="/projects"
+              className="nav-link"
+              onClick={handleMobileMenu}
+            >
               Projects
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="nav-link">
+            <Link to="/contact" className="nav-link" onClick={handleMobileMenu}>
               Contact
             </Link>
           </li>
