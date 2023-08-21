@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { IonIcon } from "@ionic/react";
 import { menuOutline, closeOutline } from "ionicons/icons";
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -17,7 +17,7 @@ const Header = () => {
         Portfolio
       </Link>
       <nav className="nav">
-        <ul className="nav-list" onClick={handleMobClick}>
+        <ul className="nav-list">
           <li>
             <Link to="/" className="nav-link">
               Home

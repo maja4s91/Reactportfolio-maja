@@ -5,13 +5,10 @@ import {
   shareSocialOutline,
   cameraOutline,
 } from "ionicons/icons";
-import { useRef } from "react";
 
 const About = () => {
-  const aboutRef = useRef(null);
-
   return (
-    <section className="section-about" ref={aboutRef}>
+    <section className="section-about">
       <h2 className="heading-primary">About</h2>
       <picture className="about-img">
         <source srcSet="./Maja-About.webp" type="image/webp" />
