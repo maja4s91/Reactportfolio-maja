@@ -34,7 +34,7 @@ const Contact = () => {
               <li className="li-logo">
                 <a
                   className="profile-link"
-                  href="https://rs.linkedin.com/in/maja-stojanovic-a24610176"
+                  href="https://www.linkedin.com/in/maja-17129-a24610176"
                   target="_blank"
                 >
                   <IonIcon icon={logoLinkedin} className="ion-icon"></IonIcon>
@@ -52,7 +52,7 @@ const Contact = () => {
               <li className="li-logo">
                 <a
                   className="profile-link"
-                  href="https://join.skype.com/invite/inLQhtFlPSdH"
+                  href="https://join.skype.com/invite/EYCs3HXvOxL9"
                   target="_blank"
                 >
                   <IonIcon icon={logoSkype} className="ion-icon"></IonIcon>

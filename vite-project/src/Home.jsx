@@ -15,7 +15,7 @@ const Home = () => {
         <ul className="profiles-list">
           <li className="li-logo">
             <a
-              href="https://rs.linkedin.com/in/maja-stojanovic-a24610176"
+              href="https://www.linkedin.com/in/maja-17129-a24610176"
               className="profile-link"
               target="_blank"
             >
@@ -37,7 +37,7 @@ const Home = () => {
           </li>
           <li className="li-logo">
             <a
-              href="https://join.skype.com/invite/inLQhtFlPSdH"
+              href="https://join.skype.com/invite/EYCs3HXvOxL9"
               className="profile-link"
               target="_blank"
             >
