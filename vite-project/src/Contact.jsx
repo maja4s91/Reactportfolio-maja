@@ -24,7 +24,7 @@ const Contact = () => {
             </p>
             <p className="contact-email">
               <IonIcon icon={mailOutline} className="contact-icon"></IonIcon>
-              majastojanovic4@gmail.com
+              maja17129@gmail.com
             </p>
             {/* <p className="contact-mob">
           <IonIcon icon={callOutline} className="contact-icon"></IonIcon>

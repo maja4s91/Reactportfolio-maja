@@ -21,17 +21,17 @@ const About = () => {
           <p className="aboutme-text">
             I’m a Junior React Developer, who has successfully completed several
             courses in Web Development and have a strong background in the IT
-            industry. I’ve previously worked as a Technical Recruiter and HR
-            Manager in two different IT companies. Over the last year, I’ve been
-            actively studying and learning Web Development by taking courses in
-            React, JavaScript, HTML, and CSS. So far, I’ve developed several
-            projects on my own, including this portfolio and it has been more
-            than a thrilling journey for me. I'm passionate about Web
-            Development, and I'm seeking opportunities to build up my career and
-            gain more experience in this field. My enthusiasm for this field
-            combined with my prior experience has enabled me to gain a unique
-            skill set that can be effectively put into use while working as a
-            Junior React Developer. I'm highly organized and possess excellent
+            industry. I'm currently engaged in an internship at the IT company
+            "Ogitive", where I'm presented with a remarkable opportunity to
+            enhance my skill set and contribute meaningfully to the
+            organization. My primary responsibilities involve collaborating on
+            the development of responsive websites and engaging in direct
+            communication with clients to fulfill their project requirements.
+            I’ve previously worked as a Technical Recruiter and HR Manager in
+            two different IT companies. I'm skilled in React, JavaScript, HTML
+            and CSS. So far, I’ve developed several projects on my own, and it
+            has been more than a thrilling journey for me. I'm passionate about
+            Web Development, highly organized and possess excellent
             communication skills.
           </p>
           <ul className="aboutme-icons">
