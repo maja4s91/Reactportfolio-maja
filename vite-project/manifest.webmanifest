@@ -1,13 +1,13 @@
 {
   "icons": [
     {
-      "src": "./favicon-Android-192.png",
+      "src": "./imgs/favicon-Android-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
 
     {
-      "src": "./favicon-Android-512.png",
+      "src": "./imgs/favicon-Android-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

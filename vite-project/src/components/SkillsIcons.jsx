@@ -1,5 +1,5 @@
 import { IonIcon } from "@ionic/react";
-import dataSkills from "./dataSkills";
+import dataSkills from "../data/dataSkills";
 
 export default function SkillsIcons() {
   return (

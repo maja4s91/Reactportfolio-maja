@@ -1,5 +1,5 @@
 import { IonIcon } from "@ionic/react";
-import dataSocialIcons from "./dataSocialIcons";
+import dataSocialIcons from "../data/dataSocialIcons";
 
 export default function SocialMediaIcons() {
   return (

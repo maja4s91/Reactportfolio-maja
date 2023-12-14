@@ -1,5 +1,5 @@
 import { IonIcon } from "@ionic/react";
-import dataAboutIcons from "./dataAboutIcons";
+import dataAboutIcons from "../data/dataAboutIcons";
 
 export default function AboutIcons() {
   return (

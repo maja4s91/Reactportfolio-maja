@@ -1,14 +1,18 @@
-import data from "./data";
-import AboutIcons from "./AboutIcons";
+import data from "../data/data";
+import AboutIcons from "../components/AboutIcons";
 
 const About = () => {
   return (
     <section className="section-about">
       <h2 className="heading-primary">About</h2>
       <picture className="about-img">
-        <source srcSet="./Maja-About.webp" type="image/webp" />
-        <source srcSet="./Maja-About.png" type="image/png" />
-        <img src="./Maja-About.png" alt="Maja's image" className="about-img" />
+        <source srcSet="./imgs/Maja-About.webp" type="image/webp" />
+        <source srcSet="./imgs/Maja-About.png" type="image/png" />
+        <img
+          src="./imgs/Maja-About.png"
+          alt="Maja's image"
+          className="about-img"
+        />
       </picture>
 
       <div className="about-text">

@@ -4,9 +4,13 @@ const Projects = () => {
       <h2 className="heading-primary">Projects</h2>
 
       <picture className="project-img">
-        <source srcSet="./Blog-img.webp" type="image/webp" />
-        <source srcSet="./Blog-img.png" type="image/png" />
-        <img src="./Blog-img.webp" alt="Blog project" className="project-img" />
+        <source srcSet="./imgs/Blog-img.webp" type="image/webp" />
+        <source srcSet="./imgs/Blog-img.png" type="image/png" />
+        <img
+          src="./imgs/Blog-img.webp"
+          alt="Blog project"
+          className="project-img"
+        />
       </picture>
 
       <div className="text-box">
@@ -40,20 +44,20 @@ const Projects = () => {
       </div>
 
       <picture className="project-img">
-        <source srcSet="./Meme-generator.webp" type="image/webp" />
-        <source srcSet="./Meme-generator.png" type="image/png" />
+        <source srcSet="./imgs/Meme-generator.webp" type="image/webp" />
+        <source srcSet="./imgs/Meme-generator.png" type="image/png" />
         <img
-          src="./Meme-generator.png"
+          src="./imgs/Meme-generator.png"
           alt="Meme Generator project"
           className="project-img"
         />
       </picture>
 
       <picture className="project-img">
-        <source srcSet="./Forkify-img.webp" type="image/webp" />
-        <source srcSet="./Forkify-img.png" type="image/png" />
+        <source srcSet="./imgs/Forkify-img.webp" type="image/webp" />
+        <source srcSet="./imgs/Forkify-img.png" type="image/png" />
         <img
-          src="./Forkify-img.png"
+          src="./imgs/Forkify-img.png"
           alt="Forkify project"
           className="project-img"
         />
@@ -88,10 +92,10 @@ const Projects = () => {
         </a>
       </div>
       <picture className="project-img">
-        <source srcSet="./Omnifood-img.webp" type="image/webp" />
-        <source srcSet="./Omnifood-img.png" type="image/png" />
+        <source srcSet="./imgs/Omnifood-img.webp" type="image/webp" />
+        <source srcSet="./imgs/Omnifood-img.png" type="image/png" />
         <img
-          src="./Omnifood-img.png"
+          src="./imgs/Omnifood-img.png"
           alt="Omnifood project"
           className="project-img"
         />

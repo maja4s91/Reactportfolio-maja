@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import data from "./data";
-import SocialMediaIcons from "./SocialMediaIcons";
+import data from "../data/data";
+import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Home = () => {
   return (
@@ -17,9 +17,13 @@ const Home = () => {
         </Link>
       </div>
       <picture className="home-img">
-        <source srcSet="./Maja-Home.webp" type="image/webp" />
-        <source srcSet="./Maja-Home.png" type="image/png" />
-        <img className="home-img" src="./Maja-Home.png" alt="Maja's profile" />
+        <source srcSet="./imgs/Maja-Home.webp" type="image/webp" />
+        <source srcSet="./imgs/Maja-Home.png" type="image/png" />
+        <img
+          className="home-img"
+          src="./imgs/Maja-Home.png"
+          alt="Maja's profile"
+        />
       </picture>
     </section>
   );
