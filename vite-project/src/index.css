@@ -272,6 +272,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  color: var(--Dark-Blue);
 }
 
 .aboutme-icons {
@@ -280,8 +281,12 @@ body {
   list-style: none;
 }
 
-.aboutme-icon:hover .about-ion-icon,
+/* .aboutme-icon:hover .about-ion-icon,
 .aboutme-icon:hover h3 {
+  color: var(--Dark-Blue);
+} */
+.aboutme-icon .about-ion-icon,
+.aboutme-icon h3 {
   color: var(--Dark-Blue);
 }
 
@@ -358,10 +363,14 @@ body {
   gap: 2.5rem;
 }
 
-.skills-list:hover h3,
-.skills-list:hover .skills-ion-icon {
+/* .skills-list h3, */
+.skills-list .skills-ion-icon {
   color: var(--Dark-Blue);
 }
+/* .skills-list:hover h3,
+.skills-list:hover .skills-ion-icon {
+  color: var(--Dark-Blue);
+} */
 .skills-ion-icon {
   font-size: 7.2rem;
 }
@@ -442,7 +451,8 @@ body {
 .contact-intro {
   padding-top: 2rem;
   font-size: 3.2rem;
-  color: var(--Light-Gray);
+  color: var(--Dark-Blue);
+  /* color: #339af0; */
 }
 .contact {
   display: flex;
