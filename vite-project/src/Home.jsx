@@ -2,21 +2,16 @@ import { Link } from "react-router-dom";
 
 import { IonIcon } from "@ionic/react";
 import { logoLinkedin, logoGithub, logoSkype } from "ionicons/icons";
-import { useSelector } from "react-redux";
 
 const Home = () => {
-  const { home } = useSelector((state) => state.home);
-
   return (
     <section className="section-home">
       <div className="home-text">
-        {home.map((h) => (
-          <div key={h.id}>
-            <p className="hello">{h.hello}</p>
-            <p className="intro">{h.introName}</p>
-            <p className="position">{h.position}</p>
-          </div>
-        ))}
+        <div>
+          <p className="hello">Hello,</p>
+          <p className="intro">I'm Maja Djordjevic</p>
+          <p className="position">Junior React Developer</p>
+        </div>
 
         <ul className="profiles-list">
           <li className="li-logo">
