@@ -344,7 +344,7 @@ body {
 
 .skills-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10rem;
   align-self: center;
   justify-self: center;
