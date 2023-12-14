@@ -1,5 +1,6 @@
 import data from "../data/data";
 import AboutIcons from "../components/AboutIcons";
+import DownloadCv from "../components/DownloadCv";
 
 const About = () => {
   return (
@@ -20,9 +21,7 @@ const About = () => {
           <p className="aboutme-text ">{data.about}</p>
           <AboutIcons />
         </div>
-        <a className="about-cta" href="./Maja's CV.pdf" download="Maja's CV">
-          Download CV
-        </a>
+        <DownloadCv className={"about-cta"} />
       </div>
     </section>
   );

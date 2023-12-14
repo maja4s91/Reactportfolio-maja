@@ -3,6 +3,7 @@ import { IonIcon } from "@ionic/react";
 import { menuOutline, closeOutline } from "ionicons/icons";
 
 import { useState } from "react";
+import DownloadCv from "../components/DownloadCv";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -51,13 +52,7 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <a
-              href="./Maja's CV.pdf"
-              className="nav-link nav-cta"
-              download="Maja's CV"
-            >
-              Download CV
-            </a>
+            <DownloadCv className={"nav-link nav-cta"} />
           </li>
         </ul>
       </nav>
