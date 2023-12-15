@@ -10,7 +10,7 @@ export default function SocialMediaIcons() {
             <IonIcon
               icon={d.icon}
               className="ion-icon"
-              title="LinkedIn"
+              title={d.title}
             ></IonIcon>
           </a>
         </li>
