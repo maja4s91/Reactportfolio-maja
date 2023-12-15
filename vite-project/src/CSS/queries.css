@@ -11,10 +11,10 @@
   .section-projects {
     max-width: 110rem;
   }
-  .project-img {
+  /* .project-img {
     width: 50rem;
     height: 25rem;
-  }
+  } */
 }
 
 /* BELOW 1284px (Large desktop)
@@ -194,10 +194,10 @@
   .text-box {
     gap: 0.5rem;
   }
-  .project-img {
+  /* .project-img {
     width: 42rem;
     height: 25rem;
-  }
+  } */
   .section-skills,
   .footer {
     max-width: 85rem;
@@ -262,10 +262,10 @@
     margin-right: auto;
   }
 
-  .project-img {
+  /* .project-img {
     justify-self: center;
     align-self: center;
-  }
+  } */
 
   .project-text {
     text-align: center;
@@ -274,7 +274,7 @@
     grid-column: auto;
   }
 
-  .project-img:nth-of-type(1) {
+  /* .project-img:nth-of-type(1) {
     order: 1;
   }
   .text-box:nth-of-type(1) {
@@ -302,7 +302,7 @@
 
   .projects-view {
     order: 9;
-  }
+  } */
 
   .section-skills,
   .section-about,
