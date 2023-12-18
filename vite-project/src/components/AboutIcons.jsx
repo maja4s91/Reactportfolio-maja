@@ -1,7 +1,8 @@
 import { IonIcon } from "@ionic/react";
-import dataAboutIcons from "../data/dataAboutIcons";
+import data from "../data";
 
 export default function AboutIcons() {
+  const { dataAboutIcons } = data;
   return (
     <ul className="aboutme-icons">
       {dataAboutIcons.map((d) => (

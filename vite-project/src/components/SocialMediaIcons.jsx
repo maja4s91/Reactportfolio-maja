@@ -1,7 +1,8 @@
 import { IonIcon } from "@ionic/react";
-import dataSocialIcons from "../data/dataSocialIcons";
+import data from "../data";
 
 export default function SocialMediaIcons() {
+  const { dataSocialIcons } = data;
   return (
     <ul className="profiles-list">
       {dataSocialIcons.map((d) => (

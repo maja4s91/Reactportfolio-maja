@@ -1,4 +1,4 @@
-import data from "../data/data";
+import data from "../data";
 import AboutIcons from "../components/AboutIcons";
 import DownloadCv from "../components/DownloadCv";
 

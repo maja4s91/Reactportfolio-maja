@@ -1,7 +1,8 @@
 import { IonIcon } from "@ionic/react";
-import dataSkills from "../data/dataSkills";
+import data from "../data";
 
 export default function SkillsIcons() {
+  const { dataSkills } = data;
   return (
     <ul className="skills-container">
       {dataSkills.map((d) => (

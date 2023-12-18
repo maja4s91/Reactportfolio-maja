@@ -457,4 +457,9 @@
   .form-box {
     gap: 9rem;
   }
+  .not-found {
+    max-width: 43rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

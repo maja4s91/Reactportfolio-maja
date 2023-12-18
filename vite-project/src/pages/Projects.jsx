@@ -1,8 +1,8 @@
-import SocialMediaIcons from "../components/SocialMediaIcons";
-import dataProjects from "../data/dataProjects";
+import data from "../data";
 import { IonIcon } from "@ionic/react";
 
 const Projects = () => {
+  const { dataProjects } = data;
   return (
     <section className="section-projects">
       <h2 className="heading-primary">Projects</h2>
@@ -13,17 +13,9 @@ const Projects = () => {
             <source srcSet={d.sourcePng} type="image/png" />
             <img src={d.sourceWebP} alt={d.title} className="project-img" />
           </picture>
-
           <div className="text-box">
             <h3 className="heading-tertiary">{d.title}</h3>
             <p className="aboutme-text project-text">{d.text}</p>
-            {/* <a
-              className="about-cta"
-              href="https://blog-maja.netlify.app/"
-              target="_blank"
-            > 
-              View project&nbsp;&nbsp;➔
-            </a> */}
             <ul className="profiles-list ">
               <li className="li-logo" key={d.id}>
                 <a href={d.link} className="profile-link " target="_blank">

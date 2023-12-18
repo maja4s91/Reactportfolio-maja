@@ -6,6 +6,7 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer />
