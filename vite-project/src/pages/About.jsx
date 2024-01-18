@@ -9,7 +9,7 @@ const About = () => {
       className="section-about"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.6 } }}
+      exit={{ opacity: 0, transition: { duration: 0.3 } }}
     >
       <h2 className="heading-primary">About</h2>
       <picture className="about-img">
