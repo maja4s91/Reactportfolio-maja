@@ -10,7 +10,7 @@ const Contact = () => {
       className="section-contact"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.1 } }}
+      exit={{ opacity: 0, transition: { duration: 0.25 } }}
     >
       <h2 className="heading-primary">Contact</h2>
       <div className="form-box">
