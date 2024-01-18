@@ -1,10 +1,16 @@
 import data from "../data";
 import { IonIcon } from "@ionic/react";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const { dataProjects } = data;
   return (
-    <section className="section-projects">
+    <motion.section
+      className="section-projects"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.6 } }}
+    >
       <h2 className="heading-primary">Projects</h2>
       {dataProjects.map((d) => (
         <figure className="project" key={d.id}>
@@ -38,7 +44,7 @@ const Projects = () => {
       >
         View all projects&nbsp;&nbsp;➔
       </a>
-    </section>
+    </motion.section>
   );
 };
 

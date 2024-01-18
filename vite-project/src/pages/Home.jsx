@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
 import data from "../data";
 import SocialMediaIcons from "../components/SocialMediaIcons";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <section className="section-home">
+    <motion.section
+      className="section-home"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.6 } }}
+    >
       <div className="home-text">
         <div>
           <p className="hello">{data.hello}</p>
@@ -25,7 +31,7 @@ const Home = () => {
           alt="Maja's profile"
         />
       </picture>
-    </section>
+    </motion.section>
   );
 };
 

@@ -2,10 +2,16 @@ import { IonIcon } from "@ionic/react";
 import { pinOutline, mailOutline, callOutline } from "ionicons/icons";
 import Form from "../components/Form";
 import SocialMediaIcons from "../components/SocialMediaIcons";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <section className="section-contact">
+    <motion.section
+      className="section-contact"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.6 } }}
+    >
       <h2 className="heading-primary">Contact</h2>
       <div className="form-box">
         <address className="contacts-box">
@@ -29,7 +35,7 @@ const Contact = () => {
         </address>
         <Form />
       </div>
-    </section>
+    </motion.section>
   );
 };
 

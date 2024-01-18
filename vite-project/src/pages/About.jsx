@@ -1,10 +1,16 @@
 import data from "../data";
 import AboutIcons from "../components/AboutIcons";
 import DownloadCv from "../components/DownloadCv";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className="section-about">
+    <motion.section
+      className="section-about"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.6 } }}
+    >
       <h2 className="heading-primary">About</h2>
       <picture className="about-img">
         <source srcSet="./imgs/Maja-About.webp" type="image/webp" />
@@ -23,7 +29,7 @@ const About = () => {
         </div>
         <DownloadCv className={"about-cta"} />
       </div>
-    </section>
+    </motion.section>
   );
 };
 
