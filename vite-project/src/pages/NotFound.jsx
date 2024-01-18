@@ -7,7 +7,7 @@ export default function NotFound() {
       className="not-found"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.3 } }}
+      exit={{ opacity: 0, transition: { duration: 0.1 } }}
     >
       <p className="not-foundtext">The page couldn't be found</p>
       <Link to={"/"} className="not-foundbtn">
