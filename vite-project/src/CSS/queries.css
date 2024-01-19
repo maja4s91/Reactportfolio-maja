@@ -347,7 +347,7 @@
   }
   .home-text {
     gap: 3rem;
-    padding-top: 10rem;
+    padding-top: 6rem;
   }
 
   .hello {
@@ -368,6 +368,7 @@
   }
 
   .home-img {
+    padding-top: 5rem;
     height: 45rem;
     width: 35rem;
   }
