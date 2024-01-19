@@ -157,6 +157,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 5rem;
+  height: 100vh;
 }
 .home-text {
   display: flex;

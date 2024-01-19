@@ -5,9 +5,9 @@ export default function NotFound() {
   return (
     <motion.section
       className="not-found"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.25 } }}
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
     >
       <p className="not-foundtext">The page couldn't be found</p>
       <Link to={"/"} className="not-foundbtn">

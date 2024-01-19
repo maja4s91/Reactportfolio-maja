@@ -7,12 +7,11 @@ import NotFound from "../pages/NotFound";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 import { AnimatePresence } from "framer-motion";
-// import {} from "framer-motion/dist/framer-motion";
 
 export default function AnimatedRoutes() {
   const location = useLocation();
   return (
-    <AnimatePresence>
+    <AnimatePresence initial={false}>
       <Routes location={location} key={location.pathname}>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
