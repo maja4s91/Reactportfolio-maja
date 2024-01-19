@@ -347,6 +347,7 @@
   }
   .home-text {
     gap: 3rem;
+    padding-top: 10rem;
   }
 
   .hello {
