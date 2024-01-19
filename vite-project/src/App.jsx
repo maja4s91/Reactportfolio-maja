@@ -1,6 +1,6 @@
 import Header from "./pages/Header";
 
-import Footer from "./pages/Footer";
+// import Footer from "./pages/Footer";
 
 import AnimatedRoutes from "./components/AnimatedRoutes";
 
@@ -11,7 +11,7 @@ function App() {
       <div className="content">
         <AnimatedRoutes />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -37,13 +37,13 @@ const Projects = () => {
         </figure>
       ))}
 
-      <a
+      {/* <a
         className="about-cta projects-view"
         href="https://github.com/maja4s91"
         target="_blank"
       >
         View all projects&nbsp;&nbsp;➔
-      </a>
+      </a> */}
     </motion.section>
   );
 };

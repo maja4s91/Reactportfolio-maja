@@ -10,6 +10,8 @@
 - Background:#f0f9ff;
 - Primary: #339af0;
 
+#0d1b2a
+
 - Greys:
 - Dark: #323430;
 - Medium: #545550;
@@ -20,11 +22,15 @@
 
 :root {
   --Dark-Blue: #19bded;
-  --Light-Blue: #fffef1;
+  /* --Light-Blue: #fffef1; */
+  --Light-Blue: #0d1b2a;
 
-  --Dark-Gray: #323430;
-  --Medium-Grey: #545550;
-  --Light-Gray: #757770;
+  /* --Dark-Gray: #323430; */
+  --Dark-Gray: #c0d6df;
+  /* --Light-Gray: #757770; */
+  --Light-Gray: #c0d6df;
+  /* --Medium-Grey: #545550; */
+  --Medium-Grey: #c0d6df;
 }
 
 * {
@@ -156,8 +162,6 @@ body {
   background-color: var(--Light-Blue);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-bottom: 5rem;
-  height: 100vh;
 }
 .home-text {
   display: flex;
@@ -401,6 +405,7 @@ body {
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
+  background-color: #142133;
 }
 
 .project:hover {
@@ -518,6 +523,7 @@ body {
   align-items: center;
   gap: 1rem;
   font-size: 1.4rem;
+  color: var(--Dark-Gray);
 }
 
 .btn-contact {
