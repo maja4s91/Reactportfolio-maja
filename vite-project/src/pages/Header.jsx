@@ -4,7 +4,6 @@ import { menuOutline, closeOutline } from "ionicons/icons";
 
 import { useState } from "react";
 import DownloadCv from "../components/DownloadCv";
-import ParticlesComponent from "../components/ParticleBackground/ParticlesComponent.jsx";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -64,7 +63,6 @@ const Header = () => {
           <IonIcon className="icon-mobile-nav" icon={menuOutline}></IonIcon>
         )}
       </button>
-      <ParticlesComponent />
     </header>
   );
 };
