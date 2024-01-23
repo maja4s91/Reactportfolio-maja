@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import data from "../data";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 import { motion } from "framer-motion";
+import ParticlesComponent from "../components/ParticleBackground/ParticlesComponent.jsx";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
           alt="Maja's profile"
         />
       </picture>
+      <ParticlesComponent />
     </motion.section>
   );
 };
