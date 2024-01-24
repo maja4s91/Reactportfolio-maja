@@ -2,8 +2,22 @@ import { Link } from "react-router-dom";
 import data from "../data";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 import { motion } from "framer-motion";
+import AnimatedBackground from "../components/AnimatedBackground";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 958;
+
+  useEffect(() => {
+    const handleResizeWindow = () => setWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleResizeWindow);
+    return () => {
+      window.removeEventListener("resize", handleResizeWindow);
+    };
+  }, []);
+
   return (
     <motion.section
       className="section-home"
@@ -31,6 +45,9 @@ const Home = () => {
           alt="Maja's profile"
         />
       </picture>
+
+      {/* {width >= breakpoint ? <AnimatedBackground /> : <></>} */}
+      <AnimatedBackground />
     </motion.section>
   );
 };

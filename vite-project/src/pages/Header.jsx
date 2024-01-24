@@ -63,6 +63,7 @@ const Header = () => {
           <IonIcon className="icon-mobile-nav" icon={menuOutline}></IonIcon>
         )}
       </button>
+      {/* {width >= breakpoint ? <AnimatedBackground /> : <></>} */}
     </header>
   );
 };

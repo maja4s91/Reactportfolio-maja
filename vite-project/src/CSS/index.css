@@ -64,7 +64,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 4.2rem;
-  background-color: var(--Light-Blue);
+  /* background-color: var(--Light-Blue); */
+  background-color: none;
   height: 9rem;
   margin-bottom: 0.7rem;
   position: relative;
@@ -148,7 +149,7 @@ body {
   height: 8rem;
   padding-bottom: 0;
   padding-top: 0;
-  background-color: var(--Light-Blue);
+  background-color: var(--Light-Blue) !important;
   z-index: 999;
 }
 
@@ -159,7 +160,8 @@ body {
 /* SECTION HOME ////////////////////////////////////*/
 
 .section-home {
-  background-color: var(--Light-Blue);
+  /* background-color: var(--Light-Blue); */
+  background-color: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
