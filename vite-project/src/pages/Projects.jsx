@@ -13,7 +13,12 @@ const Projects = () => {
     >
       <h2 className="heading-primary">Projects</h2>
       {dataProjects.map((d) => (
-        <figure className="project" key={d.id}>
+        <motion.figure
+          className="project"
+          key={d.id}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <picture className="project-img">
             <source srcSet={d.sourceWebP} type="image/webp" />
             <source srcSet={d.sourcePng} type="image/png" />
@@ -34,7 +39,7 @@ const Projects = () => {
               </li>
             </ul>
           </div>
-        </figure>
+        </motion.figure>
       ))}
 
       {/* <a
