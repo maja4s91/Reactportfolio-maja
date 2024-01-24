@@ -3,20 +3,19 @@ import data from "../data";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 import { motion } from "framer-motion";
 import AnimatedBackground from "../components/AnimatedBackground";
-import { useEffect, useState } from "react";
 
 const Home = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 958;
+  // const [width, setWidth] = useState(window.innerWidth);
+  // const breakpoint = 958;
 
-  useEffect(() => {
-    const handleResizeWindow = () => setWidth(window.innerWidth);
+  // useEffect(() => {
+  //   const handleResizeWindow = () => setWidth(window.innerWidth);
 
-    window.addEventListener("resize", handleResizeWindow);
-    return () => {
-      window.removeEventListener("resize", handleResizeWindow);
-    };
-  }, []);
+  //   window.addEventListener("resize", handleResizeWindow);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResizeWindow);
+  //   };
+  // }, []);
 
   return (
     <motion.section
