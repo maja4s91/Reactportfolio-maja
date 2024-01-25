@@ -371,17 +371,25 @@ body {
   gap: 2.5rem;
 }
 
-/* .skills-list h3, */
-.skills-list .skills-ion-icon {
+.img-skills {
+  width: 7.2rem;
+  height: 7.2rem;
+  filter: grayscale(80%);
+}
+.img-skills:hover {
+  filter: grayscale(0);
+}
+
+.skills-list h3 {
   color: var(--Dark-Blue);
 }
 /* .skills-list:hover h3,
 .skills-list:hover .skills-ion-icon {
   color: var(--Dark-Blue);
 } */
-.skills-ion-icon {
+/* .skills-ion-icon {
   font-size: 7.2rem;
-}
+} */
 
 .h-skills {
   color: var(--Light-Gray);

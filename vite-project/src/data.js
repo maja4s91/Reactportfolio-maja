@@ -6,13 +6,13 @@ import {
   logoLinkedin,
   logoGithub,
   logoSkype,
-  logoReact,
-  logoHtml5,
-  logoCss3,
-  logoJavascript,
-  logoWordpress,
-  logoFigma,
-  logoElectron,
+  // logoReact,
+  // logoHtml5,
+  // logoCss3,
+  // logoJavascript,
+  // logoWordpress,
+  // logoFigma,
+  // logoElectron,
   eyeOutline,
 } from "ionicons/icons";
 
@@ -71,43 +71,45 @@ const data = {
   dataSkills: [
     {
       id: 9,
-      icon: logoReact,
+      icon: "react.png",
       title: "React",
     },
     {
       id: 10,
-      icon: logoJavascript,
+      icon: "javascript.png",
       title: "JavaScript",
     },
     {
       id: 11,
-      icon: logoWordpress,
-      title: "WordPress",
-    },
-    {
-      id: 12,
-      icon: logoHtml5,
+      icon: "html.png",
       title: "HTML",
     },
     {
-      id: 13,
-      icon: logoCss3,
+      id: 12,
+      icon: "css3.png",
       title: "CSS",
+    },
+    {
+      id: 13,
+      // icon: logoCss3,
+
+      icon: "wordpress.png",
+      title: "WordPress",
     },
 
     {
       id: 14,
-      icon: logoGithub,
+      icon: "github.png",
       title: "GitHub",
     },
     {
       id: 15,
-      icon: logoFigma,
+      icon: "figma.png",
       title: "Figma",
     },
     {
       id: 16,
-      icon: logoElectron,
+      icon: "redux.png",
       title: "Redux",
     },
   ],
