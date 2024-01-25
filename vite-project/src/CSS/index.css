@@ -37,6 +37,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  height: 100%;
 }
 
 /* *:focus {
@@ -49,11 +50,12 @@ html {
   font-size: 62.5%;
   font-family: "Prosto One", cursive;
   overflow-x: hidden;
+  height: 100%;
 }
 
 body {
   background-color: var(--Light-Blue);
-  height: 100vh;
+  height: 100%;
   overflow-x: hidden;
 }
 
