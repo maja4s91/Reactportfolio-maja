@@ -420,18 +420,22 @@
     margin-right: auto;
   }
   .skills-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     gap: 5rem;
   }
 
-  .skills-ion-icon {
+  /* .skills-ion-icon {
     font-size: 4.5rem;
+  } */
+  .img-skills {
+    width: 70%;
+    height: 70%;
   }
 
   .h-skills {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
   .section-projects {
     max-width: 43rem;
