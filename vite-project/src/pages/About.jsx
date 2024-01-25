@@ -12,7 +12,14 @@ const About = () => {
       transition={{ duration: 1 }}
     >
       <h2 className="heading-primary">About</h2>
-      <picture className="about-img">
+      <motion.picture
+        className="about-img"
+        animate={{
+          scale: [1, 2, 2, 1, 1],
+          rotate: [0, 0, 80, 80, 0],
+          borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+        }}
+      >
         <source srcSet="./imgs/Maja-About.webp" type="image/webp" />
         <source srcSet="./imgs/Maja-About.png" type="image/png" />
         <img
@@ -20,7 +27,7 @@ const About = () => {
           alt="Maja's image"
           className="about-img"
         />
-      </picture>
+      </motion.picture>
 
       <div className="about-text">
         <div className="text-icon">
