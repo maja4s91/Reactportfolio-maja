@@ -10,7 +10,7 @@ export default function SkillsIcons() {
         <li className="skills-list" key={d.id}>
           {/* <IonIcon className="ion-icon skills-ion-icon" icon={d.icon}></IonIcon> */}
           <motion.img
-            src={`../public/imgs-skills/${d.icon}`}
+            src={`./imgs-skills/${d.icon}`}
             className="img-skills"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
