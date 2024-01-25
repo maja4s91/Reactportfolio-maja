@@ -61,6 +61,7 @@ body {
 
 .header {
   max-width: 150rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +69,7 @@ body {
   /* background-color: var(--Light-Blue); */
   background-color: none;
   height: 9rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.7rem !important;
   position: relative;
 }
 
