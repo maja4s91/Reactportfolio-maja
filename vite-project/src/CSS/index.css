@@ -60,6 +60,7 @@ body {
 /* HEADER ///////////////////////////////////////////*/
 
 .header {
+  max-width: 150rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,6 +163,7 @@ body {
 .section-home {
   /* background-color: var(--Light-Blue); */
   background-color: none;
+  max-width: 150rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
