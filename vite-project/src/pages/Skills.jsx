@@ -10,7 +10,7 @@ const Skills = () => {
       transition={{ duration: 1 }}
     >
       <h2
-        className="
+        className="heading-primary justify-start 
       "
       >
         Skills
