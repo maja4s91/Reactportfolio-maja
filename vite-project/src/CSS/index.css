@@ -271,7 +271,7 @@ body {
 .heading-primary {
   grid-column: 1/-1;
   justify-self: start;
-  align-self: start;
+  align-self: end;
   color: var(--Dark-Gray);
   font-size: 4.2rem;
 }
