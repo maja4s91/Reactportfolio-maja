@@ -9,7 +9,12 @@ const Skills = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
     >
-      <h2 className="heading-primary">Skills</h2>
+      <h2
+        className="
+      "
+      >
+        Skills
+      </h2>
       <SkillsIcons />
     </motion.section>
   );

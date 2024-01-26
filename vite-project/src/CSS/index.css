@@ -261,14 +261,17 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   row-gap: 5rem;
-  /* padding: 10rem 0; */
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10rem 0;*/
   padding-bottom: 5rem;
 }
 
 .heading-primary {
   grid-column: 1/-1;
   justify-self: start;
-  align-items: center;
+  align-self: start;
   color: var(--Dark-Gray);
   font-size: 4.2rem;
 }
@@ -362,6 +365,12 @@ body {
   margin: 0 auto;
   gap: 5rem;
   padding: 5rem 0;
+  height: 75vh;
+  justify-content: center;
+}
+
+.heading-primary.justify-start {
+  align-self: flex-start !important;
 }
 
 .skills-container {
@@ -413,7 +422,9 @@ body {
   grid-template-columns: 20% 20% 20% 20%;
   gap: 5rem;
   justify-content: center;
+  align-items: center;
   padding: 5rem 0;
+  height: 65vh;
 }
 
 .project {
@@ -478,6 +489,8 @@ body {
   margin: 0 auto;
   max-width: 120rem;
   padding: 5rem 0;
+  height: 75vh;
+  justify-content: center;
 }
 
 .form-box {

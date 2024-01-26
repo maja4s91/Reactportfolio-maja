@@ -12,7 +12,7 @@ const Contact = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
     >
-      <h2 className="heading-primary">Contact</h2>
+      <h2 className="heading-primary justify-start">Contact</h2>
       <div className="form-box">
         <address className="contacts-box">
           <p className="contact-intro">Let's talk about everything!</p>
