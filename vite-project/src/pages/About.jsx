@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="container-width">
     <motion.section
       className="section-about"
       initial={{ opacity: 0, scale: 0.5 }}
@@ -38,7 +37,6 @@ const About = () => {
         <DownloadCv className={"about-cta"} />
       </div>
     </motion.section>
-    </div>
   );
 };
 
