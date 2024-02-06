@@ -19,7 +19,7 @@ import {
 const data = {
   hello: "Hello,",
   name: "I'm Maja Djordjevic",
-  position: "Junior React Developer",
+  position: "Junior Frontend Developer",
   about:
     " I’m a Junior React Developer, and currently employed at the IT company 'Ogitive' as a Frontend Web Developer. My primary responsibilities involve collaborating on the development of Responsive Websites and engaging in direct communication with clients to fulfill their project requirements (converting Figma design into Responsive Websites, using HTML, CSS, JavaScript and WordPress). I’ve previously worked as a Technical Recruiter and HR Manager in two different IT companies. I'm skilled in React, Redux, WordPress, JavaScript, HTML, CSS, GitHub and npm. So far, I’ve developed several projects on my own, and it has been more than a thrilling journey for me. I'm passionate about Web Development, highly organized and possess excellent communication skills.",
   dataAboutIcons: [

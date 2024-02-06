@@ -13,7 +13,8 @@ const AnimatedBackground = () => {
         },
       },
       color: {
-        value: ["#2EB67D", "#E01E5B", "#36C5F0"],
+        value: ["#19bded", "#c0d6df", "#E01E5B"],
+        //"#2EB67D",
       },
       shape: {
         type: "circle",
@@ -22,7 +23,7 @@ const AnimatedBackground = () => {
         value: 1,
       },
       size: {
-        value: { min: 1, max: 5 },
+        value: { min: 1, max: 3 },
       },
       links: {
         enable: true,

@@ -1,0 +1,104 @@
+/* SECTION ABOUT ME //////////////////////////////// */
+
+.section-about {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 10% 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+  row-gap: 5rem;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10rem 0;*/
+  padding-bottom: 5rem;
+}
+
+.heading-primary {
+  grid-column: 1/-1;
+  justify-self: start;
+  align-self: end;
+  color: var(--Dark-Gray);
+  font-size: 4.2rem;
+}
+
+.about-img {
+  border-radius: 1rem;
+  height: 41rem;
+  width: 41rem;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.text-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  color: var(--Dark-Blue);
+}
+
+.aboutme-icons {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+/* .aboutme-icon:hover .about-ion-icon,
+.aboutme-icon:hover h3 {
+  color: var(--Dark-Blue);
+} */
+.aboutme-icon .about-ion-icon,
+.aboutme-icon h3 {
+  color: var(--Dark-Blue);
+}
+
+.aboutme-text {
+  color: var(--Light-Gray);
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.aboutme-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about-ion-icon {
+  font-size: 4.2rem;
+}
+.heading-tertiary {
+  font-size: 1.5rem;
+  color: var(--Medium-Grey);
+}
+.icon-text {
+  color: var(--Light-Gray);
+  font-size: 1rem;
+}
+
+.about-cta:link,
+.about-cta:visited {
+  display: inline-block;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  padding: 1.2rem 2.4rem;
+  background-color: var(--Dark-Blue);
+  border: 0.3rem solid var(--Dark-Blue);
+  align-self: start;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.about-cta:hover,
+.about-cta:active {
+  background-color: var(--Light-Blue);
+  color: var(--Medium-Grey);
+}

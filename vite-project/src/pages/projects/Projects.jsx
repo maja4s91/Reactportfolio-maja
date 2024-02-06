@@ -1,6 +1,7 @@
-import data from "../data";
+import data from "../../data";
 import { IonIcon } from "@ionic/react";
 import { motion } from "framer-motion";
+import "./projects.css";
 
 const Projects = () => {
   const { dataProjects } = data;

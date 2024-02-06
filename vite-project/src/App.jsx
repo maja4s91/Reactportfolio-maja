@@ -1,4 +1,4 @@
-import Header from "./pages/Header";
+import Header from "./components/navbar/Header";
 
 // import Footer from "./pages/Footer";
 

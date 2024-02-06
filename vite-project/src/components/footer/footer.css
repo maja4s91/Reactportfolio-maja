@@ -1,0 +1,14 @@
+/* Footer */
+.footer {
+  margin: 0 auto;
+  border-top: 0.3rem solid var(--Dark-Blue);
+  max-width: 120rem;
+}
+
+.copyright {
+  font-family: inherit;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: var(--Light-Gray);
+}

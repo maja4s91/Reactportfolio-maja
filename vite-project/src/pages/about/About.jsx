@@ -1,7 +1,8 @@
-import data from "../data";
-import AboutIcons from "../components/AboutIcons";
-import DownloadCv from "../components/DownloadCv";
+import data from "../../data";
+import AboutIcons from "../../components/AboutIcons";
+import DownloadCv from "../../components/DownloadCv";
 import { motion } from "framer-motion";
+import "./about.css";
 
 const About = () => {
   return (

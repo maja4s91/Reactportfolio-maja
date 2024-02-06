@@ -1,0 +1,97 @@
+/* CONTACT /////////////////////////////////////// */
+
+.section-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 5rem 0;
+  height: 75vh;
+  justify-content: center;
+}
+
+.form-box {
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15rem;
+}
+
+.contacts-box {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: flex-start;
+  gap: 5rem;
+}
+.contact-intro {
+  padding-top: 2rem;
+  font-size: 3.2rem;
+  color: var(--Dark-Blue);
+  /* color: #339af0; */
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem 1.333rem 0.889rem;
+  font-family: inherit;
+  background-color: var(--Light-Blue);
+  color: var(--Light-Gray);
+  border: none;
+  border-bottom: 2px solid var(--Light-Gray);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  color: var(--Dark-Gray);
+}
+
+.contact-form label {
+  width: 100%;
+}
+
+.contact-locat,
+.contact-email,
+.contact-mob {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  color: var(--Dark-Gray);
+}
+
+.btn-contact {
+  align-self: flex-end;
+  background-color: var(--Light-Blue);
+  border: none;
+  border-bottom: 0.3rem solid var(--Dark-Blue);
+  font-family: inherit;
+  color: var(--Dark-Gray);
+  font-size: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 0.7rem;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn-contact:hover {
+  color: var(--Dark-Blue);
+}

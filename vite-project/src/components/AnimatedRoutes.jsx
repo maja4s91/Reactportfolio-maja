@@ -1,9 +1,9 @@
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Skills from "../pages/Skills";
-import Projects from "../pages/Projects";
-import Contact from "../pages/Contact";
-import NotFound from "../pages/NotFound";
+import Home from "../pages/home/Home";
+import About from "../pages/about/About";
+import Skills from "../pages/skills/Skills";
+import Projects from "../pages/projects/Projects";
+import Contact from "../pages/contact/Contact";
+import NotFound from "../pages/notfound/NotFound";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 import { AnimatePresence } from "framer-motion";

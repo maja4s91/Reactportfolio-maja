@@ -1,5 +1,6 @@
-import SkillsIcons from "../components/SkillsIcons";
+import SkillsIcons from "../../components/SkillsIcons";
 import { motion } from "framer-motion";
+import "./skills.css";
 
 const Skills = () => {
   return (

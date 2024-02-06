@@ -1,0 +1,93 @@
+/* SECTION HOME ////////////////////////////////////*/
+
+.section-home {
+  /* background-color: var(--Light-Blue); */
+  background-color: none;
+  max-width: 150rem;
+  padding-top: 20vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+.home-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 7.2rem;
+}
+.hello {
+  font-size: 2.2rem;
+  color: var(--Light-Gray);
+}
+.intro {
+  font-size: 6.4rem;
+  font-weight: 600;
+  color: var(--Dark-Gray);
+}
+.position {
+  font-size: 3.2rem;
+  color: var(--Dark-Blue);
+}
+
+.profiles-list {
+  display: flex;
+  gap: 1.6rem;
+  list-style: none;
+  align-items: start;
+  justify-content: start;
+}
+
+.li-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-link {
+  text-decoration: none;
+}
+
+.ion-icon {
+  font-size: 2.4rem;
+  color: var(--Medium-Grey);
+  transition: all 0.3s;
+}
+.ion-icon:hover {
+  color: var(--Dark-Blue);
+}
+
+.about-me:link,
+.about-me:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2.2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--Dark-Blue);
+  border: 0.3rem solid var(--Dark-Blue);
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.about-me:hover,
+.about-me:active {
+  background-color: var(--Light-Blue);
+  color: var(--Medium-Grey);
+}
+.home-img {
+  display: inline-block;
+  border-radius: 1rem;
+  /* justify-self: end;
+  align-self: flex-end;
+  height: 59.5rem;
+  width: 50.2rem;
+  margin: 0; */
+  max-width: 50vh;
+  position: absolute !important;
+  bottom: 0px !important;
+  right: 0;
+  margin-right: 15%;
+  z-index: 2 !important;
+}

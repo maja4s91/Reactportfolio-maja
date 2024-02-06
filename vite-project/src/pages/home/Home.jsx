@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import data from "../data";
-import SocialMediaIcons from "../components/SocialMediaIcons";
+import data from "../../data";
+import SocialMediaIcons from "../../components/SocialMediaIcons";
 import { motion } from "framer-motion";
-import AnimatedBackground from "../components/AnimatedBackground";
+import AnimatedBackground from "../../components/AnimatedBackground";
+import "./home.css";
 
 const Home = () => {
   // const [width, setWidth] = useState(window.innerWidth);

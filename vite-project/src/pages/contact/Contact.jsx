@@ -1,8 +1,9 @@
 import { IonIcon } from "@ionic/react";
 import { pinOutline, mailOutline, callOutline } from "ionicons/icons";
-import Form from "../components/Form";
-import SocialMediaIcons from "../components/SocialMediaIcons";
+import Form from "../../components/Form";
+import SocialMediaIcons from "../../components/SocialMediaIcons";
 import { motion } from "framer-motion";
+import "./contact.css";
 
 const Contact = () => {
   return (

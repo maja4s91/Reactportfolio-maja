@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import { IonIcon } from "@ionic/react";
 import { menuOutline, closeOutline } from "ionicons/icons";
+import "./navbar.css";
 
 import { useState } from "react";
-import DownloadCv from "../components/DownloadCv";
+import DownloadCv from "../DownloadCv";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
